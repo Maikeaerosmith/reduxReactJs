@@ -3,15 +3,13 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "./store";
 
-import Sidebar from "./components/Sidebar";
-import Video from "./components/Video";
+import Routes from "./routes";
 
 function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <Video />
-        <Sidebar />
+        <Routes />
       </Provider>
     </div>
   );
